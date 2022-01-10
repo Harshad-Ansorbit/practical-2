@@ -8,17 +8,16 @@ import Table from "./Table";
 export default function HomePage() {
   return (
     <>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-      ></meta>
       <div className={Homestyle.container}>
         <Sidebar />
         <div className={Homestyle.content}>
           <Navbar />
           <div className={Homestyle.main}>
-            <Graph />
-            <Cards />
+            <div className={Homestyle.wrapper}>
+              <Graph />
+              <Cards />
+            </div>
+
             <Table />
           </div>
         </div>
