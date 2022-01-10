@@ -1,0 +1,53 @@
+body {
+}
+
+.container {
+  height: 300px;
+  width: 400px;
+  animation: Loader 3s infinite;
+}
+
+.mainfram {
+  height: 200px;
+  width: 300px;
+  background-color: rgb(149, 141, 141);
+}
+
+.container div {
+  display: flex;
+  margin-inline: 5px;
+  margin-block: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(149, 141, 141);
+}
+
+.caption {
+  height: 41px;
+  width: 245px;
+  background-color: rgb(149, 141, 141);
+}
+
+@keyframes Loader {
+  1% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
